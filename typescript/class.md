@@ -1,5 +1,24 @@
 # TypeScript의 클래스
 
+## 클래스의 타입을 지정하기
+
+클래스를 생성할 때, 인스턴스의 속성을 정의하기 위해서 constructor를 사용해야한다.
+
+```
+class Person {
+  name: string;
+  constructor(a: string){
+    this.name = a;
+  }
+}
+
+let person1 = new Person('kim')
+let person2 = new Person('park')
+```
+
+constructor 안에서 값을 생성하면, 이 Person이라는 클래스로부터 생성된 모든 인스턴스들은 this.name의 값을 사용할 수 있게된다.
+타입스크립트에서 constructor값을 사용하기 위해서는 필드에 값을 미리 생성해주어야한다.
+
 ## 속성 - 접근 제어 속성 설정
 
 - 접근제어자를 통해 접근 가능한 범위를 설정
